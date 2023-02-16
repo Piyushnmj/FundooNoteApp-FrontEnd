@@ -1,0 +1,142 @@
+.maincontainer{
+    //border: solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1{
+    //border: solid green;
+    width: 23%;
+    height: 50%;
+}
+
+.card{
+    //border: solid blue;
+    width: 100%;
+    height: 100%;
+}
+
+.fundoo{
+    //border: solid black;
+    width: 100%;
+    height: 20%;
+    margin-top: 50px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.F{
+    //border: solid red;
+    width: 4%;
+    height:fit-content;
+    font-size: 20px;
+    color: #4285F4;
+}
+.U{
+    //border: solid red;
+    width: 4%;
+    height:fit-content;
+    font-size: 20px;
+    color: #DB4437;
+}
+.N{
+    //border: solid red;
+    width: 4%;
+    height:fit-content;
+    font-size: 20px;
+    color: #F4B400;
+}
+.D{
+    //border: solid red;
+    width: 4%;
+    height:fit-content;
+    font-size: 20px;
+    color: #4285F4;
+}
+.O{
+    //border: solid red;
+    width: 4%;
+    height:fit-content;
+    font-size: 20px;
+    color: #0F9D58;
+}
+.O{
+    //border: solid red;
+    width: 4%;
+    height:fit-content;
+    font-size: 20px;
+    color: #DB4437;
+}
+
+.signin{
+    //border: solid black;
+    margin-top: 15px;
+    width: 100%;
+    height: 20%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caption{
+    //border: solid black;
+    margin-top: 10px;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputform{
+    //border: solid black;
+    margin-top: 20px;
+    width: 100%;
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email{
+    //border: solid black;
+    margin-top: 10px;
+    width: 90%;
+    height: 6vh;
+}
+
+.password{
+    //border: solid black;
+    margin-top: 20px;
+    width: 90%;
+    height: 6vh;
+}
+
+.forgotpassword{
+    //border: solid black;
+    margin-top: 10px;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.login{
+    //border: solid black;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+}
+
+.createaccount{
+    color: #4285F4;
+}
+
