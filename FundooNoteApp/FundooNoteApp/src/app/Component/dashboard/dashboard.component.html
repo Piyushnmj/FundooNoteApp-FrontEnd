@@ -1,0 +1,187 @@
+<!-- <div class="maincontainer">
+    <mat-toolbar>
+        <button mat-icon-button (click)="drawer.toggle()" title="Main Menu"
+            aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div class="fundoo">
+            <div class="F">F</div>
+            <div class="U">U</div>
+            <div class="N">N</div>
+            <div class="D">D</div>
+            <div class="O">O</div>
+            <div class="O">O</div>
+        </div>
+        <div class="searchcontainer">
+            <button mat-icon-button class="searchbutton">
+                <img src="../../../assets/DashboardImages/search.svg" alt="refresh icon" width="30px" title="Refresh"
+                    class="searchimage">
+            </button>
+            <input matInput placeholder="Search" class="searchbar">
+        </div>
+        <div class="icon">
+            <button mat-icon-button class="button">
+                <img src="../../../assets/DashboardImages/refresh.svg" alt="refresh icon" width="30px" title="Refresh">
+            </button>
+            <button mat-icon-button class="button">
+                <img src="../../../assets/DashboardImages/listview.svg" alt="list icon" width="30px" title="List View">
+            </button>
+            <button mat-icon-button class="button">
+                <img src="../../../assets/DashboardImages/settings.svg" alt="settings icon" width="30px"
+                    title="Settings">
+            </button>
+        </div>
+    </mat-toolbar>
+</div>
+
+<div class="downcontainer">
+    <div class="lefticon">
+        <button mat-icon-button class="toolbarbuttons" (click)="drawer.toggle()">
+            <img src="../../../assets/DashboardImages/notes.svg" title="Notes" width="30px">
+        </button>
+        <br>
+        <button mat-icon-button class="toolbarbuttons" (click)="drawer.toggle()">
+            <img src="../../../assets/DashboardImages/reminders.svg" title="Reminders" width="30px">
+        </button>
+        <br>
+        <button mat-icon-button class="toolbarbuttons" (click)="drawer.toggle()">
+            <img src="../../../assets/DashboardImages/edit.svg" title="Edit Labels" width="30px">
+        </button>
+        <br>
+        <button mat-icon-button class="toolbarbuttons" (click)="drawer.toggle()">
+            <img src="../../../assets/DashboardImages/archive.svg" title="Archive" width="30px">
+        </button>
+        <br>
+        <button mat-icon-button class="toolbarbuttons" (click)="drawer.toggle()">
+            <img src="../../../assets/DashboardImages/delete.svg" title="Bin" width="30px">
+        </button>
+    </div>
+
+    <mat-drawer-container class="drawer-container">
+        <mat-drawer #drawer class="sidenav" mode="side">
+            <div class="rightname">
+                <div class="labels">
+                    <h2>Notes</h2>
+                </div>
+                <div class="labels">
+                    <h2>Reminders</h2>
+                </div>
+                <div class="labels">
+                    <h2>Edit Labels</h2>
+                </div>
+                <div class="labels">
+                    <h2>Archive</h2>
+                </div>
+                <div class="labels">
+                    <h2>Bin</h2>
+                </div>
+            </div>
+        </mat-drawer>
+    </mat-drawer-container>
+    <div class="route">
+        <router-outlet></router-outlet>
+    </div>
+</div> -->
+
+<div class="example-container">
+    <mat-toolbar class="example-toolbar" flexLayout="row" fxLayoutAlign="space-between center">
+        <div flexLayout="row" fxLayoutAlign="space-between center">
+            <button mat-icon-button (click)="snav.toggle()" class="menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <img class="project-name" src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png">
+            <h1 class="example-app-name">
+                <span style="color: #4285F4;">F</span>
+                <span style="color: #DB4437;">U</span>
+                <span style="color: #F4B400;">N</span>
+                <span style="color: #4285F4;">D</span>
+                <span style="color: #0F9D58;">O</span>
+                <span style="color: #DB4437;">O</span>
+            </h1>
+        </div>
+
+        <div class="middle" fxLayout="row" fxLayoutGap="600px">
+            <div>
+                <form class="search-submit">
+                    <button type="submit" class="search-button">Search</button>
+                    <input class="search" type="search" placeholder="Search...">
+                </form>
+            </div>
+            <div class="3-btn" fxLayout="row" fxLayoutGap="30px">
+                <button mat-icon-button class="button">
+                    <img src="../../../assets/DashboardImages/refresh.svg" alt="refresh icon" width="30px"
+                        title="Refresh">
+                </button>
+                <button mat-icon-button class="button">
+                    <img src="../../../assets/DashboardImages/listview.svg" alt="list icon" width="30px"
+                        title="List View">
+                </button>
+                <button mat-icon-button class="button">
+                    <img src="../../../assets/DashboardImages/settings.svg" alt="settings icon" width="30px"
+                        title="Settings">
+                </button>
+            </div>
+        </div>
+
+        <div class="account" fxLayout="row" fxLayoutGap="15px">
+            <button mat-icon-button class="apps">
+                <img src="../../../assets/DashboardImages/app.svg" alt="app icon" width="30px" title="Apps">
+            </button>
+            <button mat-icon-button class="account-image">
+                <img src="../../../assets/DashboardImages/account.svg" alt="account icon" width="40px" title="Account">
+            </button>
+        </div>
+    </mat-toolbar>
+
+    <div class="example-sidenav-container" fxLayout="row" fxLayoutGap="15px">
+        <div class="note1 " fxLayout="column" fxLayoutGap="10px">
+            <button mat-icon-button class="toolbarbuttons" (click)="snav.toggle()">
+                <img src="../../../assets/DashboardImages/notes.svg" title="Notes" width="30px">
+            </button>
+            <br>
+            <button mat-icon-button class="toolbarbuttons" (click)="snav.toggle()">
+                <img src="../../../assets/DashboardImages/reminders.svg" title="Reminders" width="30px">
+            </button>
+            <br>
+            <button mat-icon-button class="toolbarbuttons" (click)="snav.toggle()">
+                <img src="../../../assets/DashboardImages/edit.svg" title="Edit Labels" width="30px">
+            </button>
+            <br>
+            <button mat-icon-button class="toolbarbuttons" (click)="snav.toggle()">
+                <img src="../../../assets/DashboardImages/archive.svg" title="Archive" width="30px">
+            </button>
+            <br>
+            <button mat-icon-button class="toolbarbuttons" (click)="snav.toggle()">
+                <img src="../../../assets/DashboardImages/delete.svg" title="Bin" width="30px">
+            </button>
+        </div>
+
+        <mat-sidenav-container class="example-sidenav-container">
+            <mat-sidenav #snav class="labels" mode="side">
+                <mat-nav-list>
+                    <mat-list role="list" class="hide">
+                        <div class="menu_text">
+                            <mat-list-item role="listitem">Notes</mat-list-item>
+                        </div>
+                        <div class="menu_text">
+                            <mat-list-item role="listitem">Reminders</mat-list-item>
+                        </div>
+                        <div class="menu_text">
+                            <mat-list-item role="listitem">Edit Labels</mat-list-item>
+                        </div>
+                        <div class="menu_text">
+                            <mat-list-item role="listitem">Archive</mat-list-item>
+                        </div>
+                        <div class="menu_text">
+                            <mat-list-item role="listitem">Bin</mat-list-item>
+                        </div>
+                    </mat-list>
+                </mat-nav-list>
+            </mat-sidenav>
+
+            <mat-sidenav-content>
+                <router-outlet></router-outlet>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+
+    </div>
