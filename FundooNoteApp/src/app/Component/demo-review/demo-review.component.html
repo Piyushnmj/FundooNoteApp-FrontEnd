@@ -1,0 +1,11 @@
+<div class="maincontainer" fxLayoutAlign="center center" fxFlexFill>
+    <form [formGroup]="reviewForm" (ngSubmit)="submitForm()">
+        <div class="inputcontainer1">
+            <input placeholder="Id" class="input" formControlName="title">
+        </div>
+        <div class="inputcontainer2">
+            <input placeholder="Review" class="input" formControlName="description">
+        </div>
+        <button class="button">Submit</button>
+    </form>
+</div>

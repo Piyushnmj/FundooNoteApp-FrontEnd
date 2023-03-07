@@ -1,0 +1,14 @@
+.maincontainer{
+    //border: solid red;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input{
+    height: 30px;
+    width: 200px;
+}

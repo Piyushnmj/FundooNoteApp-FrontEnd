@@ -1,0 +1,166 @@
+.button {
+    //border: solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbarbuttons {
+    width: 30px;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.example-toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 2;
+}
+
+h1.example-app-name {
+    margin-right: 35px;
+    font-weight: bold;
+}
+
+.example-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+}
+
+//search
+
+form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    // border: 1px solid currentColor;
+    border-radius: 5px;
+    //height:15px
+}
+
+input[type="text"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    outline: none;
+    width: 700px;
+}
+
+input[type="text"]::placeholder {
+    color: #bbb;
+}
+
+button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+    opacity: 1;
+}
+
+.example-toolbar {
+    background-color: rgb(255, 255, 255);
+    border: 0.2px solid rgb(201, 201, 201);
+}
+
+.project-name {
+    padding-left: 15px;
+    padding-right: 5px;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    font-weight: 700;
+    color: rgb(116, 114, 114);
+    position: -1.5;
+}
+
+.search-submit {
+    width: 680px;
+    height: 35px;
+    // border-color: black;
+    // box-shadow: 2px 2px 2px #e0e0e0;
+    border-radius: 7px;
+    background-color: rgb(240, 243, 245);
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.refresh-btn {
+    height: 30px;
+    width: 27px;
+    padding-top: 6px;
+
+}
+
+.view-list-btn {
+    height: 24px;
+    width: 22px;
+    padding-top: 8px;
+}
+
+.settings-btn {
+    height: 29px;
+    width: 29px;
+    padding-top: 6px;
+}
+
+.apps {
+    height: 26px;
+    width: 26px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-image {
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note1 {
+    padding-top: 100px;
+    padding-left: 18px;
+}
+
+.menu {
+    background-color: transparent;
+    border: transparent;
+    align-items: center;
+}
+
+.hide{
+    margin-top: 62px;
+}
+
+.menu_text {
+    //border: solid blue;
+    padding-top: 22px;
+}

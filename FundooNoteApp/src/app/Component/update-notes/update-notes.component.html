@@ -1,0 +1,27 @@
+<div class="container" [style.background]="data.backgroundColour">
+    <div class="inputcontainer1">
+        <input class="input1" placeholder="Title" [(ngModel)]="title" [style.background]="data.backgroundColour">
+        <button mat-icon-button class="pinbutton">
+            <img src="../../../assets/take-note-images/pin.svg" alt="pin icon" width="25px" title="Pin">
+        </button>
+    </div>
+    <div>
+        <div class="inputcontainer2">
+            <textarea [style.background]="data.backgroundColour" matInput class="input2" placeholder="Take a note..." [(ngModel)]="description"></textarea>
+        </div>
+        <div class="icons">
+            <app-icons></app-icons>
+            <button mat-icon-button class="button">
+                <img src="../../../assets/take-note-images/undo.svg" alt="undo icon" width="20px" title="Undo">
+            </button>
+            <button mat-icon-button class="button">
+                <img src="../../../assets/take-note-images/redo.svg" alt="redo icon" width="20px" title="Redo">
+            </button>
+            <div class="closebutton">
+                <button mat-icon-button class="button" class="closebutton" (click)="closeDialog()">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

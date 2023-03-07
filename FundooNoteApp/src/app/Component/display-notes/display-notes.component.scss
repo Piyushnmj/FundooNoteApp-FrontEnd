@@ -1,0 +1,36 @@
+.container{
+    //border:1px solid red;
+    margin-top: 30px;
+    //margin: 40px;
+    padding: 50px;
+    height: 40vh;
+    width: 91.5vw;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+}
+
+.notescontainer{
+    //border: solid green;
+    height: 22vh;
+    width: 280px;
+    display: flex;
+}
+
+.notetitle{
+    //border: solid blue;
+    display: flex;
+    align-items: center;
+}
+
+.input-title{
+    //border: solid greenyellow;
+    width: 200px;
+}
+
+.notedesc{
+    //border: solid blue;
+    height: 7vh;
+}
+

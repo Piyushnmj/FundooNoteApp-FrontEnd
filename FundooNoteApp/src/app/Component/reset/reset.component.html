@@ -1,0 +1,38 @@
+<div fxLayoutAlign="center center" fxFlexFill class="maincontainer">
+    <div class="container1">
+        <div class="card">
+            <mat-card fxFlex="100%" fxFlexFill>
+                <mat-card-content>
+                    <div class="fundoo">
+                        <div class="F">F</div>
+                        <div class="U">U</div>
+                        <div class="N">N</div>
+                        <div class="D">D</div>
+                        <div class="O">O</div>
+                        <div class="O">O</div>
+                    </div>
+                    <div class="signin">Reset Password</div>
+                    <div class="caption">Enter a new password to continue</div>
+                    <form class="inputform" [formGroup]="resetForm" (ngSubmit)="resetSubmit()">
+                        <mat-form-field appearance="outline" class="email">
+                            <mat-label>Password</mat-label>
+                            <input matInput type="password" placeholder="Enter a new password" class="formControl"
+                                formControlName="new_Password">
+                            <mat-error *ngIf="f['new_Password'].getError('required')!=null">Password is required</mat-error>
+                        </mat-form-field>
+                        <mat-form-field appearance="outline" class="password">
+                            <mat-label>Confirm Password</mat-label>
+                            <input matInput placeholder="Renter Password" class="formControl"
+                                formControlName="confirm_Password">
+                            <mat-error *ngIf="f['confirm_Password'].getError('required')!=null">Confirm Password is required</mat-error>
+                            <mat-error *ngIf="f['confirm_Password'].getError('Mustmatch')!=null">Password does not match</mat-error>
+                        </mat-form-field>
+                        <div class="reset">
+                            <button mat-flat-button color="primary" class="nextbutton">Next</button>
+                        </div>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

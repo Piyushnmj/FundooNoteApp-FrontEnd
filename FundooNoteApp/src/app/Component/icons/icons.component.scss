@@ -1,0 +1,27 @@
+.resuable-icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.backgroundcolor{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 230px;
+    padding: 10px 10px 5px 5px;
+}
+
+.bg-color {
+    height: 30px;
+    width: 30px;
+    display:flex;
+    border-radius: 100px;
+}
+
+.colorBoxSetting {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 0.5px solid grey;
+    cursor: pointer;
+}
