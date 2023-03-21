@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserService } from 'src/app/Services/User/user.service';
 
@@ -9,6 +9,7 @@ import { UserService } from 'src/app/Services/User/user.service';
 })
 export class RegisterComponent implements OnInit {
   registerForm!:FormGroup;
+  password: boolean = false;
   constructor(private userService: UserService, private formBuilder: FormBuilder) {
     this.registerForm = this.formBuilder.group({
       firstName: new FormControl('', Validators.required),
@@ -53,5 +54,9 @@ export class RegisterComponent implements OnInit {
       //   confirmPasswordcontrol.setValue(null);
       // }
     };
+  }
+
+  toggleShow(){
+    this.password = !this.password;
   }
 }

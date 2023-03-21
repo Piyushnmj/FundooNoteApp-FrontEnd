@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { NotesService } from 'src/app/Services/notes/notes.service';
@@ -9,6 +9,7 @@ import { NotesService } from 'src/app/Services/notes/notes.service';
   styleUrls: ['./take-notes.component.scss']
 })
 export class TakeNotesComponent implements OnInit {
+  @Output() takeNotesEvent = new EventEmitter<string>();
   takenoteForm!: FormGroup
   isShow: boolean = true;
   submitted = false;
@@ -38,6 +39,7 @@ export class TakeNotesComponent implements OnInit {
       console.log(result);
       this.note.addNotes(result).subscribe((response: any) => {
         console.log(response);
+        this.takeNotesEvent.emit(response);
       });
     }
     this.isShow = true;

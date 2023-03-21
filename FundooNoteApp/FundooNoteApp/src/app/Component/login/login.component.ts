@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Route, Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 import { UserService } from 'src/app/Services/User/user.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { UserService } from 'src/app/Services/User/user.service';
 })
 export class LoginComponent implements OnInit {
   // loginForm!:FormGroup
-  constructor(private userService: UserService, private route:Router) { }
+  constructor(private userService: UserService, private route:Router, private popup:MatSnackBar) { }
 
   ngOnInit(): void {
   
@@ -30,6 +31,16 @@ export class LoginComponent implements OnInit {
       console.log(response.message);
       localStorage.setItem('token', response.data);
       this.route.navigateByUrl("/home/create");
+      this.popup.open('Login Successfull !!', ' ', {
+        duration: 2000,
+        verticalPosition: 'bottom'
+      })
+
+    }, error => {
+      this.popup.open('Login Unsuccessful !!', ' ', {
+        duration: 2000,
+        verticalPosition: 'bottom'
+      })
     });
   }
 

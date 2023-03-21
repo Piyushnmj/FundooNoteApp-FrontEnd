@@ -104,7 +104,7 @@
             <div>
                 <form class="search-submit">
                     <button type="submit" class="search-button">Search</button>
-                    <input class="search" type="search" placeholder="Search...">
+                    <input class="search" type="text" placeholder="Search..." (keyup)="search($event)">
                 </form>
             </div>
             <div class="3-btn" fxLayout="row" fxLayoutGap="30px">
@@ -135,7 +135,7 @@
 
     <div class="example-sidenav-container" fxLayout="row" fxLayoutGap="15px">
         <div class="note1 " fxLayout="column" fxLayoutGap="10px">
-            <button mat-icon-button class="toolbarbuttons" (click)="snav.toggle()">
+            <button mat-icon-button class="toolbarbuttons" (click)="snav.toggle()" routerLink="/home/create">
                 <img src="../../../assets/DashboardImages/notes.svg" title="Notes" width="30px">
             </button>
             <br>
@@ -147,11 +147,11 @@
                 <img src="../../../assets/DashboardImages/edit.svg" title="Edit Labels" width="30px">
             </button>
             <br>
-            <button mat-icon-button class="toolbarbuttons" (click)="snav.toggle()">
+            <button mat-icon-button class="toolbarbuttons" (click)="snav.toggle()" routerLink="/home/archive">
                 <img src="../../../assets/DashboardImages/archive.svg" title="Archive" width="30px">
             </button>
             <br>
-            <button mat-icon-button class="toolbarbuttons" (click)="snav.toggle()">
+            <button mat-icon-button class="toolbarbuttons" (click)="snav.toggle()" routerLink="/home/trash">
                 <img src="../../../assets/DashboardImages/delete.svg" title="Bin" width="30px">
             </button>
         </div>

@@ -47,7 +47,7 @@ form {
     //height:15px
 }
 
-input[type="search"] {
+input[type="text"] {
     border: none;
     background: transparent;
     margin: 0;
@@ -60,7 +60,7 @@ input[type="search"] {
     width: 700px;
 }
 
-input[type="search"]::placeholder {
+input[type="text"]::placeholder {
     color: #bbb;
 }
 
