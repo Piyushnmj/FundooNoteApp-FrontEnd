@@ -24,7 +24,7 @@
                         formControlName="password">
                     <mat-error *ngIf="f['password'].getError('required')!=null">Password is required</mat-error>
                 </mat-form-field>
-                <button mat-flat-button class="forgotpassword">Forgot Password?</button>
+                <button mat-flat-button class="forgotpassword" routerLink="/forgetPassword">Forgot Password?</button>
                 <div class="login">
                     <button mat-flat-button class="createaccount" routerLink="/register">Create Account</button>
                     <button mat-flat-button color="primary" class="nextbutton">Next</button>
