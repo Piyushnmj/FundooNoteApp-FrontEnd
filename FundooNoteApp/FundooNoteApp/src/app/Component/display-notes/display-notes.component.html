@@ -11,7 +11,7 @@
                 <div (click)="editNote(notes)">{{notes.description}}</div>
             </mat-card-content>
             <div class="icons">
-                <app-icons [noteData]="notes" (updateEvent)="displayMessage($event)"></app-icons>
+                <app-icons [noteData]="notes" [isTrash]="isTrashed" (updateEvent)="displayMessage($event)"></app-icons>
             </div>
         </mat-card>
     </div>

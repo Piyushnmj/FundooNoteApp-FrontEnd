@@ -11,12 +11,13 @@ export class IconsComponent implements OnInit {
   isTrashed: any;
   isArchived: any;
   @Input() noteData: any;
+  @Input() isTrash: any;
   @Output() updateEvent = new EventEmitter<string>();
   constructor(private note: NotesService, private popup: MatSnackBar) { }
 
   ngOnInit(): void {
-    this.isTrashed = this.noteData.isTrashed;
-    this.isArchived = this.noteData.isArchived;
+    this.isTrashed = this.isTrash;
+    //this.isArchived = this.noteData.isArchived;
   }
 
   trash() {

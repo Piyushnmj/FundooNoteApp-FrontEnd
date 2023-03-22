@@ -9,6 +9,7 @@ import { NotesService } from 'src/app/Services/notes/notes.service';
 export class TrashNotesComponent implements OnInit {
   noteList: any;
   message: any;
+  isTrashed = true;
   @Output() displayNotesEvent = new EventEmitter<string>();
   constructor(private note: NotesService) { }
 

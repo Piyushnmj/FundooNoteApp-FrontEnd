@@ -2,18 +2,18 @@
     //border: solid red;
     display: flex;
     justify-content: center;
-    height: 180px;
+    height: 150px;
     margin-top: 100px;
 }
 
-.container1{
-    //border: solid blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 20%;
-}
+// .container1{
+//     border: solid blue;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 32%;
+//     height: 20%;
+// }
 
 .card1{
     //border: solid green;
@@ -21,12 +21,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 20%;
+    width: 32%;
+    height: 9%;
+    border-radius: 7px;
 }
 
 .form1{
-    //border: solid black;
+    //border: solid red;
     width: 100%;
 }
 
@@ -42,26 +43,29 @@
 .input1{
     display: flex;
     height: 30px;
-    width: 400px;
+    width: 450px;
     border: none;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container2{
-    //border: solid blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 150px;
-}
+// .container2{
+//     //border: solid blue;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 32%;
+//     height: 150px;
+// }
 
 .card2{
     //border: solid green;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    height: 78%;
+    width: 32%;
+    height: 76%;
+    border-radius: 7px;
 }
 
 .form2{
@@ -83,8 +87,10 @@
 .input2{
     display: flex;
     height: 30px;
-    width: 450px;
+    width: 550px;
     border: none;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .inputcontainer3{
@@ -101,8 +107,10 @@
 .input3{
     display: flex;
     height: 36px;
-    width: 490px;
+    width: 600px;
     border: none;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .icons{
@@ -114,6 +122,10 @@
     //gap: 140px;
 }
 
+.icon{
+    width: 25px;
+}
+
 .closebutton{
-    margin-left: 70px;
+    margin-left: 100px;
 }

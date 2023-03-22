@@ -29,11 +29,11 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatMenuModule } from '@angular/material/menu';
 import { UpdateNotesComponent } from './Component/update-notes/update-notes.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { DemoReviewComponent } from './Component/demo-review/demo-review.component';
 import { TrashNotesComponent } from './Component/trash-notes/trash-notes.component';
 import { ArchiveNotesComponent } from './Component/archive-notes/archive-notes.component';
 import { FilterPipe } from './Pipes/filter.pipe';
-import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { DemoReviewComponent } from './Component/demo-review/demo-review.component';
 
 @NgModule({
   declarations: [
@@ -48,10 +48,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     NotesContainerComponent,
     IconsComponent,
     UpdateNotesComponent,
-    DemoReviewComponent,
     TrashNotesComponent,
     ArchiveNotesComponent,
-    FilterPipe
+    FilterPipe,
+    DemoReviewComponent
   ],
   imports: [
     BrowserModule,

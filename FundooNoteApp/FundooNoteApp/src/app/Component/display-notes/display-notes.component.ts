@@ -10,6 +10,7 @@ import { UpdateNotesComponent } from '../update-notes/update-notes.component';
 })
 export class DisplayNotesComponent implements OnInit {
   @Output() displayNotesEvent = new EventEmitter<string>();
+  @Input() isTrashed: any;
   message: any;
   filterNote: any;
   constructor(public dialog: MatDialog, private data: DataService) { }
