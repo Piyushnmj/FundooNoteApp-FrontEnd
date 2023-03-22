@@ -8,7 +8,7 @@
                 </button>
             </mat-card-title>
             <mat-card-content class="notedesc">
-                <div (click)="editNote(notes)">{{notes.description}}</div>
+                <div class="input-desc" (click)="editNote(notes)">{{notes.description}}</div>
             </mat-card-content>
             <div class="icons">
                 <app-icons [noteData]="notes" [isTrash]="isTrashed" (updateEvent)="displayMessage($event)"></app-icons>

@@ -1,1 +1,3 @@
-<app-display-notes [notesList]="noteList" [isTrashed]="isTrashed" (displayNotesEvent)="receiverRefreshEvent($event)"></app-display-notes>
+<div class="trash-container">
+    <app-display-notes [notesList]="noteList" [isTrashed]="isTrashed" (displayNotesEvent)="receiverRefreshEvent($event)"></app-display-notes>
+</div>

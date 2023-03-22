@@ -1,13 +1,13 @@
 <div class="resuable-icons">
     <button mat-icon-button class="button" *ngIf="!isTrashed">
-        <img src="../../../assets/take-note-images/remind-me.svg" alt="remind me icon" width="20px" title="Remind me">
+        <img src="../../../assets/take-note-images/remind-me.svg" alt="remind me icon" class="img-icon" title="Remind me">
     </button>
     <button mat-icon-button class="button" *ngIf="!isTrashed">
-        <img src="../../../assets/take-note-images/add-collaborator.svg" alt="add collaborator icon" width="20px"
+        <img src="../../../assets/take-note-images/add-collaborator.svg" alt="add collaborator icon" class="img-icon"
             title="Collaborator">
     </button>
     <button mat-icon-button class="button" *ngIf="!isTrashed" [matMenuTriggerFor]="colorMenu">
-        <img src="../../../assets/take-note-images/color.svg" alt="color icon" width="20px" title="Background options">
+        <img src="../../../assets/take-note-images/color.svg" alt="color icon" class="img-icon" title="Background options">
         <mat-menu #colorMenu>
             <div class="backgroundcolor">
                 <div *ngFor="let color of colorArray" class="bg-color">
@@ -17,17 +17,17 @@
         </mat-menu>
     </button>
     <button mat-icon-button class="button" *ngIf="!isTrashed">
-        <img src="../../../assets/take-note-images/new-note-with-image.svg" alt="image icon" width="20px"
+        <img src="../../../assets/take-note-images/new-note-with-image.svg" alt="image icon" class="img-icon"
             title="Add image">
     </button>
     <button mat-icon-button class="button" *ngIf="!isArchived && !isTrashed" (click)="archive()">
-        <img src="../../../assets/DashboardImages/archive.svg" alt="Archive icon" width="20px" title="Archive">
+        <img src="../../../assets/DashboardImages/archive.svg" alt="Archive icon" class="img-icon" title="Archive">
     </button>
     <button mat-icon-button class="button" *ngIf="isArchived" (click)="unarchive()">
-        <img src="../../../assets/take-note-images/unarchive.svg" alt="Unarchive icon" width="20px" title="Unarchive">
+        <img src="../../../assets/take-note-images/unarchive.svg" alt="Unarchive icon" class="img-icon" title="Unarchive">
     </button>
     <button mat-icon-button class="button" [matMenuTriggerFor]="menu" *ngIf="!isTrashed">
-        <img src="../../../assets/take-note-images/more-options.svg" alt="options icon" width="20px" title="More">
+        <img src="../../../assets/take-note-images/more-options.svg" alt="options icon" class="img-icon" title="More">
         <mat-menu #menu>
             <button mat-menu-item (click)="trash()">Delete Note</button>
             <button mat-menu-item>Add label</button>
