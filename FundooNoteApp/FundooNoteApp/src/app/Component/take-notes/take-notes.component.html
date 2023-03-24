@@ -36,15 +36,17 @@
                             formControlName="description"></textarea>
                     </div>
                     <div class="icons">
-                        <app-icons></app-icons>
-                        <button mat-icon-button class="button">
-                            <img src="../../../assets/take-note-images/undo.svg" alt="undo icon" class="icon"
-                                title="Undo">
-                        </button>
-                        <button mat-icon-button class="button">
-                            <img src="../../../assets/take-note-images/redo.svg" alt="redo icon" class="icon"
-                                title="Redo">
-                        </button>
+                        <div class="iconscontainer">
+                            <app-icons></app-icons>
+                            <button mat-icon-button class="button">
+                                <img src="../../../assets/take-note-images/undo.svg" alt="undo icon" class="icon"
+                                    title="Undo">
+                            </button>
+                            <button mat-icon-button class="button">
+                                <img src="../../../assets/take-note-images/redo.svg" alt="redo icon" class="icon"
+                                    title="Redo">
+                            </button>
+                        </div>
                         <div class="closebutton">
                             <button mat-icon-button class="button" class="closebutton" (click)="createNote()">
                                 Close

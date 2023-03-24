@@ -1,38 +1,24 @@
-.maincontainer{
+.maincontainer {
     //border: solid red;
     display: flex;
     justify-content: center;
     height: auto;
+    width: 100%;
     margin-top: 100px;
 }
 
-// .container1{
-//     border: solid blue;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 32%;
-//     height: 20%;
-// }
-
-.card1{
+.card1 {
     //border: solid green;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 32%;
     height: 10px;
     border-radius: 7px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.form1{
-    //border: solid red;
-    width: 100%;
-}
-
-.inputcontainer1{
+.inputcontainer1 {
     //border: solid black;
     width: 100%;
     display: flex;
@@ -41,45 +27,39 @@
     align-items: center;
 }
 
-.input1{
+.input1 {
     display: flex;
     height: 30px;
-    width: 450px;
+    width: 25vw;
     border: none;
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
+    outline: none;
 }
 
-// .container2{
-//     //border: solid blue;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 32%;
-//     height: 150px;
-// }
+.button {
+    //border: solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.card2{
+.card2 {
     //border: solid green;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 32%;
-    //height: 76%;
     height: auto;
+    max-height: 600px;
     border-radius: 7px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.form2{
+.inputcontainer2 {
     //border: solid black;
     width: 100%;
-}
-
-.inputcontainer2{
-    //border: solid black;
-    width: 100%;
-    height: auto;
+    min-height: 35px;
+    max-height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -87,17 +67,19 @@
     margin-top: -10px;
 }
 
-.input2{
+.input2 {
     display: flex;
     //height: 30px;
-    height: auto;
-    width: 550px;
+    min-height: 10px;
+    max-height: 600px;
+    width: 30vw;
     border: none;
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
+    outline: none;
 }
 
-.inputcontainer3{
+.inputcontainer3 {
     //border: solid black;
     width: 100%;
     height: 40%;
@@ -108,28 +90,72 @@
     margin-top: 15px;
 }
 
-.input3{
+.input3 {
     display: flex;
-    height: 36px;
-    width: 600px;
+    height: auto;
+    width: 32vw;
     border: none;
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
+    outline: none;
 }
 
-.icons{
+.icons {
     //border: solid blue;
     margin-top: 10px;
-    width: 510px;
+    //width: 30vw;
     display: flex;
     flex-direction: row;
-    //gap: 140px;
+    justify-content: space-between;
 }
 
-.icon{
+.iconscontainer {
+    //border: solid red;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
     width: 25px;
 }
 
-.closebutton{
-    margin-left: 100px;
+.closebutton {
+    //border: solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .input1{
+        width: 50%;
+    }
+
+    .card2 {
+        width: 90%;
+    }
+
+    .input2 {
+        width: 90%;
+    }
+
+    .input3{
+        width: 100%;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .closebutton{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    
 }
