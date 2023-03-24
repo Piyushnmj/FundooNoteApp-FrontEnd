@@ -3,9 +3,11 @@
         <mat-card class="card" [style.background]="notes.backgroundColour">
             <mat-card-title class="notetitle">
                 <div class="input-title" (click)="editNote(notes)">{{notes.title}}</div>
-                <button mat-icon-button class="pinbutton">
-                    <img src="../../../assets/take-note-images/pin.svg" alt="pin icon" width="25px" title="Pin">
-                </button>
+                <div class="button">
+                    <button mat-icon-button class="pinbutton">
+                        <img src="../../../assets/take-note-images/pin.svg" alt="pin icon" width="25px" title="Pin">
+                    </button>
+                </div>
             </mat-card-title>
             <mat-card-content class="notedesc">
                 <div class="input-desc" (click)="editNote(notes)">{{notes.description}}</div>

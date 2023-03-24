@@ -1,63 +1,58 @@
 <div class="maincontainer">
     <div *ngIf="isShow; then thenBlock else elseBlock"></div>
     <ng-template #thenBlock>
-        <!-- <div class="container1"> -->
-            <mat-card class="card1">
-                <form [formGroup]="takenoteForm" class="form1">
-                    <div class="inputcontainer1">
-                        <input class="input1" placeholder="Take a note..." (click)="show()"
-                            formControlName="description">
-                        <button mat-icon-button class="button">
-                            <img src="../../../assets/take-note-images/new-list.svg" alt="new list icon" class="icon"
-                                title="New List">
-                        </button>
-                        <button mat-icon-button class="button">
-                            <img src="../../../assets/take-note-images/new-note-with-drawing.svg"
-                                alt="new note with drawing icon" class="icon" title="New note with drawing">
-                        </button>
-                        <button mat-icon-button class="button">
-                            <img src="../../../assets/take-note-images/new-note-with-image.svg"
-                                alt="new note with image icon" class="icon" title="New note with image">
-                        </button>
-                    </div>
-                </form>
-            </mat-card>
-        <!-- </div> -->
+        <mat-card class="card1">
+            <form [formGroup]="takenoteForm" class="form1">
+                <div class="inputcontainer1">
+                    <input class="input1" placeholder="Take a note..." (click)="show()" formControlName="description">
+                    <button mat-icon-button class="button">
+                        <img src="../../../assets/take-note-images/new-list.svg" alt="new list icon" class="icon"
+                            title="New List">
+                    </button>
+                    <button mat-icon-button class="button">
+                        <img src="../../../assets/take-note-images/new-note-with-drawing.svg"
+                            alt="new note with drawing icon" class="icon" title="New note with drawing">
+                    </button>
+                    <button mat-icon-button class="button">
+                        <img src="../../../assets/take-note-images/new-note-with-image.svg"
+                            alt="new note with image icon" class="icon" title="New note with image">
+                    </button>
+                </div>
+            </form>
+        </mat-card>
     </ng-template>
     <ng-template #elseBlock>
-        <!-- <div class="container2"> -->
-            <mat-card class="card2">
-                <form [formGroup]="takenoteForm" class="form2" >
-                    <div class="inputcontainer2">
-                        <input class="input2" placeholder="Title" formControlName="title">
+        <mat-card class="card2">
+            <form [formGroup]="takenoteForm" class="form2">
+                <div class="inputcontainer2">
+                    <input class="input2" placeholder="Title" formControlName="title">
+                    <button mat-icon-button class="button">
+                        <img src="../../../assets/take-note-images/pin.svg" alt="pin icon" class="icon" title="Pin">
+                    </button>
+                </div>
+                <div>
+                    <div class="inputcontainer3">
+                        <textarea matInput class="input3" placeholder="Take a note..."
+                            formControlName="description"></textarea>
+                    </div>
+                    <div class="icons">
+                        <app-icons></app-icons>
                         <button mat-icon-button class="button">
-                            <img src="../../../assets/take-note-images/pin.svg" alt="pin icon" class="icon" title="Pin">
+                            <img src="../../../assets/take-note-images/undo.svg" alt="undo icon" class="icon"
+                                title="Undo">
                         </button>
-                    </div>
-                    <div>
-                        <div class="inputcontainer3">
-                            <textarea matInput class="input3" placeholder="Take a note..."
-                                formControlName="description"></textarea>
-                        </div>
-                        <div class="icons">
-                            <app-icons></app-icons>
-                            <button mat-icon-button class="button">
-                                <img src="../../../assets/take-note-images/undo.svg" alt="undo icon" class="icon"
-                                    title="Undo">
+                        <button mat-icon-button class="button">
+                            <img src="../../../assets/take-note-images/redo.svg" alt="redo icon" class="icon"
+                                title="Redo">
+                        </button>
+                        <div class="closebutton">
+                            <button mat-icon-button class="button" class="closebutton" (click)="createNote()">
+                                Close
                             </button>
-                            <button mat-icon-button class="button">
-                                <img src="../../../assets/take-note-images/redo.svg" alt="redo icon" class="icon"
-                                    title="Redo">
-                            </button>
-                            <div class="closebutton">
-                                <button mat-icon-button class="button" class="closebutton" (click)="createNote()">
-                                    Close
-                                </button>
-                            </div>
                         </div>
                     </div>
-                </form>
-            </mat-card>
-        <!-- </div> -->
+                </div>
+            </form>
+        </mat-card>
     </ng-template>
 </div>

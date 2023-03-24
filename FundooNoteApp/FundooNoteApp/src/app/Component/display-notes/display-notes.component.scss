@@ -1,7 +1,6 @@
 .container{
     //border:1px solid red;
     margin-top: 3%;
-    //margin: 40px;
     padding-right: 50px;
     padding-left: 50px;
     height: 40vh;
@@ -9,38 +8,40 @@
     gap: 15px;
     display: flex;
     flex-wrap: wrap;
-    align-content: baseline;
+    //align-content: baseline;
 }
 
-// .notescontainer{
-//     border: solid green;
-//     height: 22vh;
-//     width: 240px;
-//     display: flex;
-// }
-
 .card{
+    //border: solid blue;
     width: 240px;
     padding-top: 5px;
     padding-bottom: 5px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .notetitle{
     //border: solid blue;
     display: flex;
-    align-items: center;
 }
 
 .input-title{
     //border: solid greenyellow;
     width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
 }
 
-.input-title{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+.pinbutton{
+    //border: solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-desc{
@@ -48,9 +49,3 @@
     font-size: 15px;
     height: auto;
 }
-
-// .notedesc{
-//     border: solid blue;
-//     height: 5vh;
-// }
-

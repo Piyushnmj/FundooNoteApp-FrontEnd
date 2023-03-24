@@ -40,6 +40,7 @@ export class TakeNotesComponent implements OnInit {
       this.note.addNotes(result).subscribe((response: any) => {
         console.log(response);
         this.takeNotesEvent.emit(response);
+        this.takenoteForm.reset();
       });
     }
     this.isShow = true;
