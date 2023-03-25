@@ -80,5 +80,4 @@ export class NotesService {
     }
     return this.http.PutService(this.base+`Note/ChangeColour?noteId=`+result.noteId+`&BackgroundColour=`+result.backgroundColour, result, true, header);
   }
-  //https://localhost:44305/api/Note/ChangeColour?noteId=1&BackgroundColour=blue
 }

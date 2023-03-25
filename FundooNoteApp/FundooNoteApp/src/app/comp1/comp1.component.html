@@ -1,0 +1,12 @@
+<div>
+    <input type="text" placeholder="Search" (keyup)="search($event)">
+    <div *ngFor="let details of detailsArray | demoPipe : jsonArray">
+        <mat-card>
+            <mat-card-content>
+                <div>{{details.id}}</div>
+                <div>{{details.name}}</div>
+                <div>{{details.department}}</div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

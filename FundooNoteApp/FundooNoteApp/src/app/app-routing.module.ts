@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthguardGuard } from './authorization/authguard.guard';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
 import { ArchiveNotesComponent } from './Component/archive-notes/archive-notes.component';
 import { DashboardComponent } from './Component/dashboard/dashboard.component';
 import { DemoReviewComponent } from './Component/demo-review/demo-review.component';
@@ -19,7 +21,7 @@ const routes: Routes = [
   { path: 'forgetPassword', component: ForgetComponent },
   { path: 'resetPassword/:token', component: ResetComponent },
   {
-    path: 'home', component: DashboardComponent, canActivate:[AuthguardGuard],
+    path: 'home', component: DashboardComponent, canActivate: [AuthguardGuard],
     children: [
       { path: '', redirectTo: "/home/create", pathMatch: 'full' },
       { path: 'create', component: NotesContainerComponent },
@@ -28,6 +30,8 @@ const routes: Routes = [
     ]
   },
   { path: 'demo', component: DemoReviewComponent },
+  { path: 'comp1', component: Comp1Component },
+  { path: 'comp2', component: Comp2Component }
 ];
 
 @NgModule({

@@ -2,10 +2,6 @@
     <mat-card class="card">
         <div class="container">
             <div class="title">
-                <!-- <div>
-                    <mat-card-content fxLayoutAlign="right"
-                        style="font-size: 25px; color: dodgerblue; font-weight: bolder;">Fundoo</mat-card-content>
-                </div> -->
                 <div class="fundoo">
                     <div class="F">F</div>
                     <div class="U">U</div>
@@ -18,8 +14,7 @@
                     <mat-card-content class="sub-title">Create your Fundoo Account</mat-card-content>
                 </div>
             </div>
-            <form class="form" [formGroup]="registerForm" (ngSubmit)="registerUser()"
-                class="login-form">
+            <form class="form" [formGroup]="registerForm" (ngSubmit)="registerUser()" class="login-form">
                 <div class="inputfields">
                     <mat-form-field appearance="outline">
                         <mat-label>First Name</mat-label>
@@ -43,14 +38,14 @@
                 <div class="inputfields">
                     <mat-form-field appearance="outline">
                         <mat-label>Password</mat-label>
-                        <input matInput [type]="password ? 'text' : 'password' " placeholder="Enter Password" class="formControl"
-                            formControlName="password">
+                        <input matInput [type]="password ? 'text' : 'password' " placeholder="Enter Password"
+                            class="formControl" formControlName="password">
                         <mat-error *ngIf="f['password'].getError('required')!=null">Password is required</mat-error>
                     </mat-form-field>
                     <mat-form-field appearance="outline">
                         <mat-label>Confirm Password</mat-label>
-                        <input matInput [type]="password ? 'text' : 'password' " placeholder="Renter Password" class="formControl"
-                            formControlName="ConfirmPassword">
+                        <input matInput [type]="password ? 'text' : 'password' " placeholder="Renter Password"
+                            class="formControl" formControlName="ConfirmPassword">
                         <!-- <mat-error *ngIf="registerForm.value.ConfirmPassword">Password does not match</mat-error> -->
                         <mat-error *ngIf="f['ConfirmPassword'].getError('required')!=null">Re-enter password</mat-error>
                         <mat-error *ngIf="f['ConfirmPassword'].getError('Mustmatch')!=null">Password does not
@@ -58,7 +53,8 @@
                     </mat-form-field>
                 </div>
                 <div class="checkbox">
-                    <mat-checkbox class="showpassword" color="primary" (click)="toggleShow()"> {{ password ? '' : ''}} Show Password</mat-checkbox>
+                    <mat-checkbox class="showpassword" color="primary" (click)="toggleShow()"> {{ password ? '' : ''}}
+                        Show Password</mat-checkbox>
                 </div>
                 <div class="row">
                     <button mat-button class="loginbtn" routerLink="/login">Log in

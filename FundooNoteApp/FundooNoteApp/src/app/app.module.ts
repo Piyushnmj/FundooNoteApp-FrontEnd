@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -34,6 +33,9 @@ import { ArchiveNotesComponent } from './Component/archive-notes/archive-notes.c
 import { FilterPipe } from './Pipes/filter.pipe';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { DemoReviewComponent } from './Component/demo-review/demo-review.component';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
+import { DemoPipePipe } from './demoPipe/demo-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,10 @@ import { DemoReviewComponent } from './Component/demo-review/demo-review.compone
     TrashNotesComponent,
     ArchiveNotesComponent,
     FilterPipe,
-    DemoReviewComponent
+    DemoReviewComponent,
+    Comp1Component,
+    Comp2Component,
+    DemoPipePipe
   ],
   imports: [
     BrowserModule,

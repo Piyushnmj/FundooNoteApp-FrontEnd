@@ -25,7 +25,6 @@ export class DisplayNotesComponent implements OnInit {
   }
 
   editNote(notes: any) {
-    ;
     let dialogbox = this.dialog.open(UpdateNotesComponent, {
       height: 'auto',
       width: '40%',
