@@ -13,6 +13,8 @@ export class DisplayNotesComponent implements OnInit {
   @Input() isTrashed: any;
   message: any;
   filterNote: any;
+  layoutdata: any;
+  
   constructor(public dialog: MatDialog, private data: DataService) { }
 
   @Input() notesList: any;
@@ -21,13 +23,22 @@ export class DisplayNotesComponent implements OnInit {
     this.data.incomingData.subscribe((response) => {
       console.log("Searching...", response);
       this.filterNote = response;
-    })
+    });
+
+    this.data.changeLayout.subscribe((response) => {
+      console.log("layout change works", response);
+      this.layoutdata = response;
+
+      if(this.layoutdata==""){
+        this.layoutdata="display-note-container";
+      }
+    });
   }
 
   editNote(notes: any) {
     let dialogbox = this.dialog.open(UpdateNotesComponent, {
       height: 'auto',
-      width: '40%',
+      width: '30%',
       data: notes
     })
     dialogbox.afterClosed().subscribe(result => {

@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthguardGuard } from './authorization/authguard.guard';
-import { Comp1Component } from './comp1/comp1.component';
-import { Comp2Component } from './comp2/comp2.component';
 import { ArchiveNotesComponent } from './Component/archive-notes/archive-notes.component';
 import { DashboardComponent } from './Component/dashboard/dashboard.component';
-import { DemoReviewComponent } from './Component/demo-review/demo-review.component';
 import { ForgetComponent } from './Component/forget/forget.component';
 import { LoginComponent } from './Component/login/login.component';
 import { NotesContainerComponent } from './Component/notes-container/notes-container.component';
@@ -29,9 +26,6 @@ const routes: Routes = [
       { path: 'archive', component: ArchiveNotesComponent }
     ]
   },
-  { path: 'demo', component: DemoReviewComponent },
-  { path: 'comp1', component: Comp1Component },
-  { path: 'comp2', component: Comp2Component }
 ];
 
 @NgModule({

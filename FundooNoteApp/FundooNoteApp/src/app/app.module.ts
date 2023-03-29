@@ -33,9 +33,6 @@ import { ArchiveNotesComponent } from './Component/archive-notes/archive-notes.c
 import { FilterPipe } from './Pipes/filter.pipe';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { DemoReviewComponent } from './Component/demo-review/demo-review.component';
-import { Comp1Component } from './comp1/comp1.component';
-import { Comp2Component } from './comp2/comp2.component';
-import { DemoPipePipe } from './demoPipe/demo-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -54,9 +51,6 @@ import { DemoPipePipe } from './demoPipe/demo-pipe.pipe';
     ArchiveNotesComponent,
     FilterPipe,
     DemoReviewComponent,
-    Comp1Component,
-    Comp2Component,
-    DemoPipePipe
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-.container{
+.display-note-container{
     //border:1px solid red;
     margin-top: 3%;
     padding-left: 65px;
@@ -9,9 +9,29 @@
     flex-wrap: wrap;
 }
 
+.layoutchange{
+    margin-top: 3%;
+    padding-left: 65px;
+    height: 70vh;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card{
     //border: solid blue;
     width: 240px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.card-column{
+    width: 500px;
     padding-top: 5px;
     padding-bottom: 5px;
     height: auto;

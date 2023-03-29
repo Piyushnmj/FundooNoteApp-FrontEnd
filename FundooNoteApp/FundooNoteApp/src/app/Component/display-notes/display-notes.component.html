@@ -1,4 +1,4 @@
-<div class="container">
+<div [ngClass]="layoutdata">
     <div class="notescontainer" *ngFor="let notes of notesList | filter : filterNote">
         <mat-card class="card" [style.background]="notes.backgroundColour">
             <mat-card-title class="notetitle">
